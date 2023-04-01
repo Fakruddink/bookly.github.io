@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookly</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Set the container to the width and height of the image */
+    .container {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+      }
+
+      /* Set the width and height of the images */
+      .slides img {
+        width: auto;
+        height: 600px;
+      }
+
+      /* Set the animation for the sliding effect */
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      /* Apply the animation to the slides */
+      .slides {
+        display: flex;
+        animation: slide 3s infinite;
+      }
+  </style>
+
+</head>
+
+<body>
+
+  
+<section>
+
+  <nav>
+
+    <div class="logo">
+      <img src="Logo.png">
+    </div>
+
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Arrivals">Arrival</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#footer">ContactUs</a></li>
+    </ul>
+
+    <div class="tag" >
+        <div class="search_bar" >
+            <input type="text" placeholder="Author,Book names;))">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>                
+    </div>   
+
+
+  </nav>
+  
+</section>
+
+<div class="container">
+  <div id="Home"  class="slides">
+    <img src="banner1.png" alt="Image 1" />
+    <img src="banner3.png" alt="Image 2" />
+    <img src="Image3.png" alt="Image 3" />
+  </div>
+</div>
+
+
+
+
+
+  <!--Arrivals-->
+
+  <div class="arrivals">
+    <h1>New Arrivals</h1>
+
+    <div class="arrivals_box">
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img id="Arrivals" src="arrival_1.png">
+            </div>
+            <div class="arrivals_tag">
+                
+                <p>The Giver</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book1.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_2.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>The WRIGHT BROTHERS</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book2.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_3.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>Radical Gardening</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book3.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_4.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>Red Queen</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book4.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_5.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>Harper Lee</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book5.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_6.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>Harry Potter</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book6.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_7.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>Heroes Of Olympus</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book7.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_8.webp">
+            </div>
+            <div class="arrivals_tag">
+                <p>Diary Of a Wimpy Kid</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book8.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_9.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>Ranger's Apprentice</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book9.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="arrival_10.jpg">
+            </div>
+            <div class="arrivals_tag">
+                <p>Percy Jackson</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="book10.html" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<body>
+    <img src="Image3.png" height="300px" padding:10px 0;>
+</body>
+
+
+    <!--About-->
+
+    <div class="about">
+
+        <div class="about_image">
+            <img id ="About" img src="about.png">
+        </div>
+        <div class="about_tag">
+            <h1>About Us</h1>
+            <p>
+                Welcome to Bookly, your go-to destination for all your reading needs! Our online bookstore offers a wide selection of books, from the latest bestsellers to timeless classics, and everything in between.<br> <br>At Bookly, we are passionate about books and are dedicated to providing our customers with the best possible shopping experience. We offer a user-friendly website that makes it easy to find the books you want, with options to search by title, author, genre, and more. Our product pages include detailed descriptions and reviews to help you make informed decisions about your purchases.
+
+            </p>
+            <a href="#" class="about_btn">Learn More</a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+   <!--Footer-->
+
+   <footer id = "footer">
+    <div class="footer_main">
+
+
+
+        <div class="tag">
+            <h1>Quick Link</h1>
+            <a href="#Home">Home</a>
+            <a href="#Arrivals">Arrival</a>
+            <a href="#About">About</a>
+            <a href="#ContactUs">ContactUs</a>
+            
+        </div>
+
+        <div class="tag">
+            <h1>Contact Info</h1>
+            <a href="#"><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>+94 32 444 699</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>bookly123@gmail.com</a>
+            
+        </div>
+
+        <div class="tag">
+            <h1>Follow Us</h1>
+            <div class="social_link">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            
+        </div>
+
+     
+        
+    </div>
+
+    <p class="end">Design By<span><i class="fa-solid fa-face-grin"></i> Fakruddin</span></p>
+
+</footer>
+
+
+
+
+</body>
+</html>
